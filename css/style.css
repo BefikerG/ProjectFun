@@ -1,0 +1,229 @@
+@charset "UTF-8";
+:root {
+  --background-color: rgb(26, 26, 26);
+  --red: rgb(254, 33, 33);
+  --light-gray: rgb(114, 114, 114);
+  --veryLight-gray: rgb(137, 137, 137);
+  --white: rgb(255, 255, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+@font-face {
+  font-family: "Tera";
+  src: url(../asset/Tera-Regular.ttf);
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, 100vh);
+  font-family: "Roboto", sans-serif;
+  color: var(--light-gray);
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  scroll-behavior: smooth;
+}
+body #red {
+  color: var(--red);
+}
+body #coBruh {
+  color: var(--red);
+}
+body #small {
+  font-size: 1rem;
+}
+body #amh {
+  color: var(--red);
+  font-family: "Tera";
+}
+body #top {
+  width: 100%;
+  display: grid;
+  justify-items: end;
+  align-items: center;
+}
+body #top h2 {
+  margin: 10px 10px 0 0;
+  font-size: 1.5rem;
+  text-align: right;
+}
+body #home, body #bfg, body #beamlak {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 75% 10%;
+}
+body #bfg, body #beamlak {
+  display: grid;
+  grid-template-columns: repeat(2, 100vw);
+  grid-template-rows: 100%;
+  overflow-x: auto;
+}
+body #bfg #main, body #beamlak #main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 15% 75% 10%;
+}
+body #bfg #main .name, body #beamlak #main .name {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+body #bfg #main .name h1, body #beamlak #main .name h1 {
+  font-size: 4.5rem;
+  opacity: 50%;
+}
+body #bfg #slide, body #beamlak #slide {
+  display: grid;
+  grid-template-rows: 25% 65% 10%;
+  align-items: end;
+}
+body #bfg #slide .bg-gray, body #beamlak #slide .bg-gray {
+  background-color: var(--veryLight-gray);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 85% 15%;
+  grid-template-rows: 100%;
+  position: relative;
+}
+body #bfg #slide .bg-gray .name, body #beamlak #slide .bg-gray .name {
+  font-size: 2rem;
+  color: var(--white);
+  opacity: 20%;
+  display: inline-block;
+  margin: 0;
+  margin-top: 10px;
+  position: relative;
+  left: 10%;
+}
+body #bfg #slide .bg-gray .name #amh, body #beamlak #slide .bg-gray .name #amh {
+  color: var(--white);
+}
+body #bfg #slide .bg-gray #top, body #beamlak #slide .bg-gray #top {
+  display: inline-block;
+  width: unset;
+}
+body #bfg #slide .bg-gray #top h2, body #beamlak #slide .bg-gray #top h2 {
+  display: inline-block;
+}
+body #bfg #slide .bg-gray #imgBfg, body #bfg #slide .bg-gray #imgአቶ, body #beamlak #slide .bg-gray #imgBfg, body #beamlak #slide .bg-gray #imgአቶ {
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 75px;
+  overflow: hidden;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  top: 50%;
+}
+body #bfg #slide .bg-gray #imgBfg img, body #bfg #slide .bg-gray #imgአቶ img, body #beamlak #slide .bg-gray #imgBfg img, body #beamlak #slide .bg-gray #imgአቶ img {
+  position: relative;
+  top: 10px;
+  width: 100%;
+}
+body #bfg #slide .description, body #beamlak #slide .description {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  height: 100%;
+}
+body #bfg #slide .description #amh, body #beamlak #slide .description #amh {
+  color: var(--light-gray);
+}
+body #bfg #slide .description .center .who, body #beamlak #slide .description .center .who {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+body #bfg #slide .description .center .who h1, body #beamlak #slide .description .center .who h1 {
+  font-size: 3rem;
+  margin: 5px 0 5px;
+}
+body #bfg #slide .description .center .who p, body #beamlak #slide .description .center .who p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  width: 70%;
+  text-align: center;
+  margin: 12px 0 5px;
+}
+body #bfg #slide .socials, body #beamlak #slide .socials {
+  height: 100%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 100%;
+  align-items: center;
+  justify-items: center;
+}
+body #bfg #slide .socials a, body #beamlak #slide .socials a {
+  text-decoration: none;
+}
+body #bfg #slide .socials a svg, body #beamlak #slide .socials a svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: var(--light-gray);
+  transition: 0.5s;
+}
+body #bfg #slide .socials a svg:hover, body #beamlak #slide .socials a svg:hover {
+  fill: var(--red);
+}
+body #home .center {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+body #home .center .circle {
+  position: absolute;
+  border: 2px solid var(--red);
+  height: calc(100vh / 2);
+  width: calc(100vh / 2);
+  border-radius: 50%;
+}
+body #home .center .rectangle {
+  position: absolute;
+  border: 2px solid var(--red);
+  height: 150px;
+  width: 150px;
+}
+body #home .center .text-div {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+body #home .center .text-div svg {
+  width: 100%;
+}
+body #home .bottom {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: end;
+}
+body #home .bottom h3 {
+  margin: 0 0 5px 5px;
+}/*# sourceMappingURL=style.css.map */

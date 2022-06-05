@@ -1,0 +1,280 @@
+:root{
+    --background-color: rgb(26, 26, 26);
+    --red: rgb(254, 33, 33);
+    --light-gray: rgb(114, 114, 114);
+    --veryLight-gray: rgb(137, 137, 137);
+    --white: rgb(255, 255, 255);
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+::-webkit-scrollbar{
+    appearance: none;
+}
+
+@font-face {
+    font-family: 'Tera';
+    src: url(../asset/Tera-Regular.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,100vh);
+    font-family: 'Roboto', sans-serif;
+    color: var(--light-gray);
+    overflow-x: hidden;
+    background-color: var(--background-color);
+
+    scroll-behavior: smooth;
+    
+    #red{
+        color: var(--red);
+    }
+
+    #coBruh{
+        color: var(--red);
+    }
+
+    #small{
+        font-size: 1rem;
+    }
+
+    #amh{
+        color: var(--red);
+        font-family: 'Tera';
+    }
+
+    #top{
+        width: 100%;
+        display: grid;
+        justify-items: end;
+        align-items: center;
+
+        h2{
+            margin: 10px 10px 0 0;
+            font-size: 1.5rem;
+            text-align: right;
+        }
+    }
+
+    #home, #bfg, #beamlak{
+        height: 100%;
+        width: 100%;
+        background-color: var(--background-color);
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 75% 10%;
+    }
+
+    #bfg, #beamlak{
+        display: grid;
+        grid-template-columns: repeat(2,100vw);
+        grid-template-rows: 100%;
+        overflow-x: auto;
+
+        #main{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 15% 75% 10%;
+
+            .name{
+                height: 100%;
+                width: 100%;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+
+                h1{
+                    font-size: 4.5rem;
+                    opacity: 50%;
+                }
+            }
+        }
+
+        #slide{
+            display: grid;
+            grid-template-rows: 25% 65% 10%;
+            align-items: end;
+
+            .bg-gray{
+                background-color: var(--veryLight-gray);
+                height: 100%;
+                width: 100%;
+                display: grid;
+                // align-items: center;
+                justify-items: center;
+                grid-template-columns: 85% 15%;
+                grid-template-rows: 100%;
+                position: relative;
+
+                .name{
+                    font-size: 2rem;
+                    color: var(--white);
+                    opacity: 20%;
+                    display: inline-block;
+                    margin: 0;
+                    margin-top: 10px;
+                    position: relative;
+                    left: 10%;
+
+                    #amh{
+                        color: var(--white);
+                    }
+                }
+
+
+                #top{
+                    display: inline-block;
+                    width: unset;
+                    
+                    h2{
+                        display: inline-block;
+                    }
+                }
+
+                #imgBfg, #imgአቶ{
+                    max-width: 150px;
+                    max-height: 150px;
+                    border-radius: 75px;
+                    overflow: hidden;
+                    position: absolute;
+                    display: grid;
+                    align-items: center;
+                    align-content: center;
+                    justify-content: center;
+                    top: 50%;
+
+                    img{
+                        position: relative;
+                        top: 10px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .description{
+                display: grid;
+                align-items: center;
+                justify-items: center;
+                height: 100%;
+
+                #amh{
+                    color: var(--light-gray);
+                }
+
+                .center{
+                     
+                    .who{
+                        display: grid;
+                        align-items: center;
+                        justify-items: center;
+                        
+                        h1{
+                            font-size: 3rem;
+                            margin: 5px 0 5px;
+                        }
+
+                        p{
+                            font-size: 1.8rem;
+                            font-weight: 300;
+                            width: 70%;
+                            text-align: center;
+                            margin: 12px 0 5px;
+                        }
+                        // #bam{
+                        //     margin: 0;
+                        // }
+                    }
+                }
+            }
+
+            
+            .socials{
+                height: 100%;
+                width: 50%;
+                display: grid;
+                grid-template-columns: repeat(4,25%);
+                grid-template-rows: 100%;
+                align-items: center;
+                justify-items: center;
+
+                a{
+                    text-decoration: none;
+
+                    svg{
+                        width: 1.5rem;
+                        height: 1.5rem;
+                        fill: var(--light-gray);
+                        transition: .5s;
+                    }
+                    svg:hover{
+                        fill: var(--red);
+                    }
+                }
+
+                
+            }
+        }
+    }
+
+    #home{
+        .center{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            position: relative;
+
+            .circle{
+                position: absolute;
+                border: 2px solid var(--red);
+                height: calc(100vh / 2);
+                width: calc(100vh / 2);
+                border-radius: 50%;
+            }
+
+            .rectangle{
+                position: absolute;
+                border: 2px solid var(--red);
+                height: 150px;
+                width: 150px;
+            }
+
+            .text-div{
+                width: 100%;
+                display: grid;
+                align-items: center;
+                justify-items: center;
+
+                svg{
+                    width: 100%;
+                }      
+            }
+
+        }
+
+        .bottom{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            align-items: end;
+
+            h3{
+                margin: 0 0 5px 5px;
+            }
+        }
+    }
+
+    
+}

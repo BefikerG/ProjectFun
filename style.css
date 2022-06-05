@@ -1,0 +1,134 @@
+:root{
+    --background-color: rgb(26, 26, 26);
+    --red: rgb(254, 33, 33);
+    --light-gray: rgb(114, 114, 114);
+    --veryLight-gray: rgb(137, 137, 137);
+    --white: rgb(255, 255, 255);
+}
+
+@font-face {
+    font-family: 'Tera';
+    src: url(asset/Tera-Regular.ttf);
+}
+
+#top{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-items: end;
+}
+
+#top h2{
+    margin: 10px 10px 0 0 ;
+    text-align: right;
+    font-size: 1.5rem;
+    color: var(--light-gray);
+}
+
+#red{
+    color: var(--red);
+}
+
+#amh{
+    font-family: 'Tera';
+}
+
+.name {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    opacity: 0.4;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(3,100vh);
+    font-family: 'Roboto', sans-serif;
+}
+
+body #home, #bfg, #beamlak{
+    background-color: var(--background-color);
+    width: 100vw;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+#home .center{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+#home .center .circle{
+    border: 2px solid var(--red);
+    height: calc(100vh / 2);
+    width: calc(100vh / 2);
+    border-radius: 50%;
+    position: absolute;
+}
+
+#home .center .rectangle{
+    border: 2px solid var(--red);
+    height: 150px;
+    width: 150px;
+    position: absolute;
+}
+
+#home .center p{
+    color: var(--red);
+    width: 100vw;
+    text-align: center;
+    letter-spacing: 2.5rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+
+#home .bottom{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: start;
+}
+
+#home .bottom h3{
+    color: var(--light-gray);
+    margin: 0;
+}
+
+#home .bottom h3 #small{
+    font-size: 1rem;
+}
+
+#home .bottom h3 #amh{
+    color: var(--red);
+}
+
+
+#bfg{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,100vw);
+    grid-template-rows: 100%;
+    overflow-y: auto;
+}
+
+#slide, #main{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
