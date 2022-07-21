@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="90.927" height="126.289" viewBox="0 0 90.927 126.289">
+  <g id="Scroll_down_animation" data-name="Scroll down animation" transform="translate(-889.289 -861.289)">
+    <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(934.753 896.652) rotate(45)" fill="none" stroke="#707070" stroke-width="3" opacity="0.5">
+      <rect width="64.295" height="64.295" stroke="none"/>
+      <rect x="1.5" y="1.5" width="61.295" height="61.295" fill="none"/>
+    </g>
+    <g id="Rectangle_6" data-name="Rectangle 6" transform="translate(934.753 879.935) rotate(45)" fill="none" stroke="#707070" stroke-width="2" opacity="0.6">
+      <rect width="64.295" height="64.295" stroke="none"/>
+      <rect x="1" y="1" width="62.295" height="62.295" fill="none"/>
+    </g>
+    <g id="Rectangle_7" data-name="Rectangle 7" transform="translate(934.753 861.289) rotate(45)" fill="none" stroke="#707070" stroke-width="1" opacity="0.6">
+      <rect width="64.295" height="64.295" stroke="none"/>
+      <rect x="0.5" y="0.5" width="63.295" height="63.295" fill="none"/>
+    </g>
+  </g>
+</svg>

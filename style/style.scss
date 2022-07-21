@@ -1,0 +1,540 @@
+/*
+    Here the properties are written alphabetical order for a better reading
+*/
+
+:root{
+    --blue: rgb(44, 46, 72);
+    --red: rgb(254, 33, 33);
+    --bg_color: rgb(26, 26, 26);
+    --light_gray: rgb(112, 112, 112);
+    --big_names_color: rgba(130, 130, 130, 0.318);
+    --profile_gray_top: rgba(137, 137, 137, 0.505);
+}
+
+@font-face {
+    font-family: 'Tera';
+    src: url(../asset/Tera-Regular.ttf);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+--webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: var(--bg_color);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    width: 100vw;
+    
+    //Colors and Cursor Properies
+
+    #blue{
+        color: var(--blue);
+    }
+
+    #red{
+        color: var(--red);
+    }
+
+    #cursor_cb{
+        display: none;
+    }
+
+    //general properties or properties in common
+    //ID's
+
+    #i_am{
+        color: var(--light_gray);
+        text-align: center;
+    }
+    
+    #memeber_skills{
+        color: var(--light_gray);
+        font-family: Tera;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #profile_links{
+        color: var(--bg_color);
+        transition: 1s;
+    }
+
+    #profile_links:hover{
+        color: var(--red);
+    }
+
+    #top_div{
+        align-items: center;
+        display: flex;
+        height: 10%;
+        justify-content: flex-end;
+    }
+
+    #who_we_are{
+        color: var(--light_gray);
+        display: inline-block;
+        font-size: 100%;
+        font-weight: bold;
+        margin: 10px;
+        text-align: right;
+    }
+
+    //HTML Elements
+
+    h2{
+        font-family: 'Roboto', sans-serif;
+    }
+
+    //Classes
+
+    .amh{
+        font-family: Tera;
+    }
+    
+    .cb{
+        display: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 1s;
+    }
+
+    //Multiple class element and id callings
+
+    main, #slide, #memeber{
+        scroll-behavior: smooth;
+    }
+
+    //Main Page Setup
+    
+    main{
+        display: grid;
+        
+        #home{
+            height: 100vh;            
+            overflow: hidden;
+            padding: 10px;
+
+            #center_div{
+                align-items: center;
+                display: flex;
+                height: 80%;
+                justify-content: center;
+                position: relative;
+
+                #txt_cobruh{
+                    text-align: center;
+                    width: 100%;
+
+                    #logo{
+                        width: 90%;
+                    }
+                }
+
+                #circle{
+                    border: 2px solid var(--red);
+                    border-radius: 50%;
+                    height: 50vh;
+                    left: calc(100vw/10);
+                    position: absolute;
+                    top: calc(100vh/6.5);
+                    width: 50vh;
+                }
+            }
+
+            #bottom{
+                bottom: 0;
+                height: 10%;
+                position: relative;
+
+                .txts{
+                    bottom: 0;
+                    margin: 10px;
+                    position: absolute;
+
+                    p{
+                        color: var(--light_gray);
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        margin: 0;
+                    }
+    
+                    .from{
+                        font-size: 0.8em;
+                    }
+                }
+            }
+        }
+
+        #memeber{
+            display: grid;
+            height: 100vh;
+            grid-template-columns: repeat(2,100vw);
+            overflow-x: auto;
+            overflow-y: hidden;
+            width: 100%;
+
+            #slide{
+                display: grid;
+                grid-template-columns: repeat(2,100vw);
+                
+                .intro{
+                    padding: 10px;
+                    
+                    #center{
+                        align-items: center;
+                        display: flex;
+                        height: 80%;
+                        justify-content: center;
+        
+                        #big_name{
+                            color: var(--big_names_color);
+                            font-size: 4rem;
+                            opacity: 50%;
+                        }
+        
+                    }
+        
+                    #next_page{
+                        height: 10%;
+        
+                        #slide_animation{
+                            height: 100%;
+                            position: relative;
+                            top: 0;
+                            text-align: center;
+
+                            img{
+                                height: 100%;
+                                transform: rotate(270deg);
+                                position: relative;
+                                bottom: 1vh;    
+                            }
+                        }
+                    }
+                }
+
+                .profile{
+                    #gray_top{
+                        background-color: var(--profile_gray_top);
+                        height: 20%;
+                        position: relative;
+                        text-align: center;
+                        width: 100%;
+
+                        #nick_name{
+                            color: var(--big_names_color);
+                            font-size: 2.5rem;
+                            margin: 0;
+                        }
+
+                        #profile_image{
+                            border-radius: 4rem;
+                            display: inline-block;
+                            height: 8rem;
+                            overflow: hidden;
+                            position: relative;
+                            top: 1rem;
+                            width: 8rem;
+                            z-index: 1;
+
+                            img{
+                                bottom: 1rem;
+                                position: relative;
+                                right: 10px;
+                                width: 115%;
+                            }
+                        }
+
+                        .who_we_are{
+                            margin: 0;
+                            position: absolute;
+                            right: 10px;
+                            top: 10px;
+                        }
+                    }
+
+                    #profile_info{
+                        align-items: center;
+                        display: flex;
+                        height: 70%;
+                        justify-content: center;
+                        width: 100%;
+
+                        #info_wrap{
+                            width: 80%;
+
+                            #social_media_div{
+                                display: flex;
+                                font-size: 1.2rem;
+                                height: 50px;
+                                justify-content: space-around;
+                                width: 100%;
+                            }
+
+                        }
+                    }
+
+                    #back_arrow{
+                        height: 10%;
+                        text-align: center;
+
+                        a{
+                            height: 100%;
+
+                            #back_arrow_anim_div{
+                                display: inline-block;
+                                height: 100%;
+                                transform: rotate(180deg);
+                            }
+                        }
+
+                        img{
+                            position: relative;
+                            height: 100%;
+                            transform: rotate(-90deg);
+                            top: 2vh;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+@media screen and(min-width:426px) {
+
+    html{
+        cursor: none;
+        scroll-behavior: smooth;
+    }
+
+    body{
+
+        //Cursor
+
+        #cursor_cb{
+            align-items: center;
+            border: 1.5px solid white;
+            border-radius: 50px;
+            display: grid;
+            height: 60px;
+            justify-items: center;
+            position: absolute;
+            text-align: center;
+            width: 60px;
+
+            #dot{
+                background-color: white;
+                border-radius: 10px;
+                height: 10%;
+                width: 10%;
+            }
+        }
+
+        //ID's
+
+        #next_page_mouse_parameter{
+            color: none;
+            cursor: none;
+            display: block;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            text-decoration: none;
+            width: 50%;
+            z-index: 1;
+
+            .next_page_mouse{
+                cursor: none;
+            }
+        }
+
+        #next_page{
+            text-align: center;
+
+            #slide_animation{
+                display: inline-block;
+                height: 50%;
+                transform: rotate(90deg);
+            }
+        }
+
+        #next_page_mouse{
+            height: 100%;
+            position: absolute;
+            right: 0;
+            width: 50%;            
+        }
+
+        #prev_page_mouse{
+            height: 100%;
+            left: 0;
+            position: absolute;
+            width: 50%;
+        }
+
+        #profile_links{
+            color: var(--bg_color);
+            display: block;
+            text-align: center;
+        }
+
+        #text_cobruh{
+            z-index: -1;
+        }
+
+        #to_page{
+            color: var(--light_gray);
+            display: inline-block;
+            font-weight: bolder;
+            left: 2px;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            z-index: -1;
+        }
+
+        //Classes
+
+        .cb{
+            display: block;
+            left: 20px;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            z-index: 1;
+        }
+        
+        .intro{
+            position: relative;
+        }
+
+        //HTML elements
+
+        a{
+            cursor: none;
+        }
+
+        main{    
+            display: grid;
+            grid-template-columns: repeat(3,100vw);
+            height: 100vh;
+            overflow: hidden;
+            width: 100%;
+
+            #home{
+
+                #center_div{
+
+                    #txt_cobruh{
+                        width: 50%;
+                    }
+                }
+
+                #bottom{
+
+                    .txts{
+                        top: 10%;
+                    }
+                }
+            }
+
+            #memeber{
+                overflow: hidden;
+             
+                #slide{
+                    grid-template-columns: 100%;
+                    grid-template-rows: repeat(2,100vh);
+
+                    .profile{
+                        display: grid;
+                        grid-template-columns: 70% 30%;
+                        grid-template-rows: 100%;
+                        grid-template-areas:
+                        'info contact' 
+                        ;
+                        position: relative;
+
+                        #nick_name{
+                            left: 50vw;
+                            position: absolute;
+                            top: 10px;
+                        }
+
+                        #gray_top{
+                            grid-area: contact;
+                            height: 100%;
+                            position: unset;
+
+                            #profile_image{
+                                border-radius: 0;
+                                height: 17rem;
+                                right: 15vw;
+                                top: 33vh;
+                                width: 13rem;
+                            }
+                        }
+
+                        #profile_info{
+                            height: 90%;
+
+                            #info_wrap{
+                         
+                                #i_am{
+                                    font-size: 3.5rem;
+                                    margin: 0;
+                                    text-align: left;
+                                }
+    
+                                #memeber_skills{
+                                    margin: 0;
+                                    margin-top: 1rem;
+                                    text-align: left;
+                                }
+
+                                #social_media_div{
+                                    display: flex;
+                                    flex-direction: column;
+                                    grid-area: contact;
+                                    height: 17rem;
+                                    justify-content: space-evenly;
+                                    position: absolute;
+                                    right: 35%;
+                                    top: 33vh;
+                                    width: 5rem;
+                                }
+                            }
+                        }
+
+                        #back_arrow{
+                            bottom: 10vh;
+                            height: 100%;
+                            position: relative;
+                            text-align: center;
+                            width: 100vw;
+
+                            a{
+
+                                #back_arrow_anim_div{
+                                    height: 50%;
+                                    transform: rotate(270deg);
+                                    width: unset;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    }
+}

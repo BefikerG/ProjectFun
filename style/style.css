@@ -1,0 +1,420 @@
+/*
+    Here the properties are written alphabetical order for a better reading
+*/
+:root {
+  --blue: rgb(44, 46, 72);
+  --red: rgb(254, 33, 33);
+  --bg_color: rgb(26, 26, 26);
+  --light_gray: rgb(112, 112, 112);
+  --big_names_color: rgba(130, 130, 130, 0.318);
+  --profile_gray_top: rgba(137, 137, 137, 0.505);
+}
+
+@font-face {
+  font-family: "Tera";
+  src: url(../asset/Tera-Regular.ttf);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+--webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--bg_color);
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100vw;
+}
+body #blue {
+  color: var(--blue);
+}
+body #red {
+  color: var(--red);
+}
+body #cursor_cb {
+  display: none;
+}
+body #i_am {
+  color: var(--light_gray);
+  text-align: center;
+}
+body #memeber_skills {
+  color: var(--light_gray);
+  font-family: Tera;
+  font-size: 1.5rem;
+  text-align: center;
+}
+body #profile_links {
+  color: var(--bg_color);
+  transition: 1s;
+}
+body #profile_links:hover {
+  color: var(--red);
+}
+body #top_div {
+  align-items: center;
+  display: flex;
+  height: 10%;
+  justify-content: flex-end;
+}
+body #who_we_are {
+  color: var(--light_gray);
+  display: inline-block;
+  font-size: 100%;
+  font-weight: bold;
+  margin: 10px;
+  text-align: right;
+}
+body h2 {
+  font-family: "Roboto", sans-serif;
+}
+body .amh {
+  font-family: Tera;
+}
+body .cb {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 1s;
+}
+body main, body #slide, body #memeber {
+  scroll-behavior: smooth;
+}
+body main {
+  display: grid;
+}
+body main #home {
+  height: 100vh;
+  overflow: hidden;
+  padding: 10px;
+}
+body main #home #center_div {
+  align-items: center;
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  position: relative;
+}
+body main #home #center_div #txt_cobruh {
+  text-align: center;
+  width: 100%;
+}
+body main #home #center_div #txt_cobruh #logo {
+  width: 90%;
+}
+body main #home #center_div #circle {
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  height: 50vh;
+  left: calc(100vw/10);
+  position: absolute;
+  top: calc(100vh/6.5);
+  width: 50vh;
+}
+body main #home #bottom {
+  bottom: 0;
+  height: 10%;
+  position: relative;
+}
+body main #home #bottom .txts {
+  bottom: 0;
+  margin: 10px;
+  position: absolute;
+}
+body main #home #bottom .txts p {
+  color: var(--light_gray);
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+body main #home #bottom .txts .from {
+  font-size: 0.8em;
+}
+body main #memeber {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 100vw);
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+body main #memeber #slide {
+  display: grid;
+  grid-template-columns: repeat(2, 100vw);
+}
+body main #memeber #slide .intro {
+  padding: 10px;
+}
+body main #memeber #slide .intro #center {
+  align-items: center;
+  display: flex;
+  height: 80%;
+  justify-content: center;
+}
+body main #memeber #slide .intro #center #big_name {
+  color: var(--big_names_color);
+  font-size: 4rem;
+  opacity: 50%;
+}
+body main #memeber #slide .intro #next_page {
+  height: 10%;
+}
+body main #memeber #slide .intro #next_page #slide_animation {
+  height: 100%;
+  position: relative;
+  top: 0;
+  text-align: center;
+}
+body main #memeber #slide .intro #next_page #slide_animation img {
+  height: 100%;
+  transform: rotate(270deg);
+  position: relative;
+  bottom: 1vh;
+}
+body main #memeber #slide .profile #gray_top {
+  background-color: var(--profile_gray_top);
+  height: 20%;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+body main #memeber #slide .profile #gray_top #nick_name {
+  color: var(--big_names_color);
+  font-size: 2.5rem;
+  margin: 0;
+}
+body main #memeber #slide .profile #gray_top #profile_image {
+  border-radius: 4rem;
+  display: inline-block;
+  height: 8rem;
+  overflow: hidden;
+  position: relative;
+  top: 1rem;
+  width: 8rem;
+  z-index: 1;
+}
+body main #memeber #slide .profile #gray_top #profile_image img {
+  bottom: 1rem;
+  position: relative;
+  right: 10px;
+  width: 115%;
+}
+body main #memeber #slide .profile #gray_top .who_we_are {
+  margin: 0;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+body main #memeber #slide .profile #profile_info {
+  align-items: center;
+  display: flex;
+  height: 70%;
+  justify-content: center;
+  width: 100%;
+}
+body main #memeber #slide .profile #profile_info #info_wrap {
+  width: 80%;
+}
+body main #memeber #slide .profile #profile_info #info_wrap #social_media_div {
+  display: flex;
+  font-size: 1.2rem;
+  height: 50px;
+  justify-content: space-around;
+  width: 100%;
+}
+body main #memeber #slide .profile #back_arrow {
+  height: 10%;
+  text-align: center;
+}
+body main #memeber #slide .profile #back_arrow a {
+  height: 100%;
+}
+body main #memeber #slide .profile #back_arrow a #back_arrow_anim_div {
+  display: inline-block;
+  height: 100%;
+  transform: rotate(180deg);
+}
+body main #memeber #slide .profile #back_arrow img {
+  position: relative;
+  height: 100%;
+  transform: rotate(-90deg);
+  top: 2vh;
+}
+
+@media screen and (min-width: 426px) {
+  html {
+    cursor: none;
+    scroll-behavior: smooth;
+  }
+
+  body #cursor_cb {
+    align-items: center;
+    border: 1.5px solid white;
+    border-radius: 50px;
+    display: grid;
+    height: 60px;
+    justify-items: center;
+    position: absolute;
+    text-align: center;
+    width: 60px;
+  }
+  body #cursor_cb #dot {
+    background-color: white;
+    border-radius: 10px;
+    height: 10%;
+    width: 10%;
+  }
+  body #next_page_mouse_parameter {
+    color: none;
+    cursor: none;
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    width: 50%;
+    z-index: 1;
+  }
+  body #next_page_mouse_parameter .next_page_mouse {
+    cursor: none;
+  }
+  body #next_page {
+    text-align: center;
+  }
+  body #next_page #slide_animation {
+    display: inline-block;
+    height: 50%;
+    transform: rotate(90deg);
+  }
+  body #next_page_mouse {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 50%;
+  }
+  body #prev_page_mouse {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 50%;
+  }
+  body #profile_links {
+    color: var(--bg_color);
+    display: block;
+    text-align: center;
+  }
+  body #text_cobruh {
+    z-index: -1;
+  }
+  body #to_page {
+    color: var(--light_gray);
+    display: inline-block;
+    font-weight: bolder;
+    left: 2px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: -1;
+  }
+  body .cb {
+    display: block;
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    top: 20px;
+    z-index: 1;
+  }
+  body .intro {
+    position: relative;
+  }
+  body a {
+    cursor: none;
+  }
+  body main {
+    display: grid;
+    grid-template-columns: repeat(3, 100vw);
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+  }
+  body main #home #center_div #txt_cobruh {
+    width: 50%;
+  }
+  body main #home #bottom .txts {
+    top: 10%;
+  }
+  body main #memeber {
+    overflow: hidden;
+  }
+  body main #memeber #slide {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 100vh);
+  }
+  body main #memeber #slide .profile {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 100%;
+    grid-template-areas: "info contact";
+    position: relative;
+  }
+  body main #memeber #slide .profile #nick_name {
+    left: 50vw;
+    position: absolute;
+    top: 10px;
+  }
+  body main #memeber #slide .profile #gray_top {
+    grid-area: contact;
+    height: 100%;
+    position: unset;
+  }
+  body main #memeber #slide .profile #gray_top #profile_image {
+    border-radius: 0;
+    height: 17rem;
+    right: 15vw;
+    top: 33vh;
+    width: 13rem;
+  }
+  body main #memeber #slide .profile #profile_info {
+    height: 90%;
+  }
+  body main #memeber #slide .profile #profile_info #info_wrap #i_am {
+    font-size: 3.5rem;
+    margin: 0;
+    text-align: left;
+  }
+  body main #memeber #slide .profile #profile_info #info_wrap #memeber_skills {
+    margin: 0;
+    margin-top: 1rem;
+    text-align: left;
+  }
+  body main #memeber #slide .profile #profile_info #info_wrap #social_media_div {
+    display: flex;
+    flex-direction: column;
+    grid-area: contact;
+    height: 17rem;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 35%;
+    top: 33vh;
+    width: 5rem;
+  }
+  body main #memeber #slide .profile #back_arrow {
+    bottom: 10vh;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100vw;
+  }
+  body main #memeber #slide .profile #back_arrow a #back_arrow_anim_div {
+    height: 50%;
+    transform: rotate(270deg);
+    width: unset;
+  }
+}/*# sourceMappingURL=style.css.map */
